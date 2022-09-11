@@ -1,0 +1,646 @@
+@import url(./fonts.css);
+
+
+html,body{
+    margin: 0%;
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+
+:root{
+    /*********theme font-family: ;************/
+    --Abel:'Abel',cursive;
+}
+
+
+
+
+
+
+/************************global classes********************/
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: black;
+}
+h2{
+    font-family: sans-serif;
+}
+h3{
+    font-family: serif;
+    font-size: 1.3rem;
+
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: gray;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #022;
+}
+/************************global classes********************/
+
+/*---------------------navbar-----------------*/
+.nav{
+    background: white;
+    padding:1rem 2rem;
+    height:2rem;
+    min-height: 5vh;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: gray;
+}
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+.nav .nav-items .nav-link:hover{
+    background-color: mediumspringgreen;
+}
+
+
+
+.nav.nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Abel);
+    font-size: 1.6rem;
+}
+.nav .social{
+    padding: 1.4rem 0
+}
+.nav .social i{
+    padding: 0 .2rem
+
+}
+.nav .social i:hover{
+    color: lightblue;
+}
+
+
+
+
+
+/*---------------------navbar-----------------*/  
+
+
+
+/**********************main content*****************/
+
+/*********************site title****************/
+main .site-title{
+    background: url('./images/corona01.jpg');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+
+}
+main .site-title h1 {
+    margin: .3rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main .site-title .btn{
+    margin: 1.8rem;
+    color: skyblue;
+}
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+
+/*********************site title****************/
+
+
+/*********************website carousel******************/
+
+main .blog{
+    background: url('./images/image09.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 140vh;
+    width: 100%;
+}
+
+
+main .blog-post{
+    padding-top: 6rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 1);
+}
+
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: skyblue;
+    margin: .5rem;
+}
+main .blog-content span{
+    display: block;
+}
+section .container .owl-nav{
+    top: 0%;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: gray;
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: gray;
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+
+/*********************website carousel******************/
+
+
+/***************************side content***************************/
+
+main .site-content{
+    display: grid;
+    grid-template-columns:70% 30%;
+}
+main .post-content{
+    width: 100%;
+    margin-top: 5rem;
+
+}
+main .site-content .post-content>.post-image,.post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+main .site-content .post-content>.post-image .post-info{
+    background: lightseagreen;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+}
+main .site-content .post-content> .post-image>div{
+    overflow: hidden;
+
+}
+main .site-content .post-content>.post-image .img{
+    width: 100%;
+    transition: 1s;
+}
+
+main .site-content .post-content> .post-image img:hover{
+    transform: scale(1.3);
+}
+
+main .site-content .post-content>.post-image .post-info span{
+    margin: 0 .5rem;
+}
+
+main .post-content .post-title a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: lightslategray;
+}
+
+.site-content .pagination{
+    justify-content: center;
+    color: gray;
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: .3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.site-content .pagination .pages{
+    background: gray;
+    color: white;
+}
+
+/***************************side content***************************/
+.site-content >.sidebar .category-list{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.site-content >.sidebar .category-list .list-items{
+    background: turquoise;
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.site-content >.sidebar .category-list .list-items a{
+    color: black;
+}
+
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 1rem;
+}
+.site-content .sidebar .popular-post .post-info{
+    padding:.4rem .1rem  !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1rem;
+}
+
+
+/**********************main content*****************/
+
+/*---------------------viewport less than or equal to-----------------*/
+
+@media only screen and (max-width:750px){
+    .nav .nav-menu,.nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+
+    }
+}
+
+/*---------------------viewport less than or equal to-----------------*/
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+h1, h2, h3{
+    font-family: sans-serif;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+h3{
+    color: rgb(2, 2, 2);
+}
+main .outer-one {
+    padding: 1em;
+
+}
+
+main .outer-one .outer {
+    column-count: 3;
+    column-gap: 2em;
+    text-align: left;
+    column-rule-style: solid;
+    column-rule-color: rgb(66, 66, 63);
+}
+main .outer-one .outer img{
+    width: 80%;
+    margin: 1em 0 0;
+}
+h1{
+    font-size: 3rem ;
+    margin: 2em 0 1em;
+}
+main .outer-one{
+    padding: 4em;
+}
+article{
+    padding: 2em;
+    background: lightgray;
+}
+h2{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    
+}
+h2::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 10px;
+    z-index: -1;
+    bottom: -.3em;
+    left: -2em;
+    background: purple;
+    border-radius: 1em;
+}
+.secondary{
+    margin-top: 2em;
+}
+img{
+    width: 100%;
+}
+h3{
+    color: rgba(0, 0, 0, 0.925);
+    margin: 1.5em 0 1em;
+}
+   
+
+
+/*********footer*******************/
+.kilimanjaro_area {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+	}
+.foo_top_header_one {
+    background-color: #15151e;
+    color: #fff;
+    column-count: 2;
+}
+.section_padding_100_70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.foo_top_header_one {
+    color: #fff;
+}.kilimanjaro_part {
+    margin-bottom: 30px;
+}
+.foo_top_header_one .kilimanjaro_part > h5 {
+    color: #fff;
+}
+.kilimanjaro_part h4, .kilimanjaro_part h5 {
+    margin-bottom: 30px;
+}
+.kilimanjaro_single_contact_info > p, .kilimanjaro_single_contact_info > h5, .kilimanjaro_blog_area > a, .foo_top_header_one .kilimanjaro_part > p {
+    color: rgba(255,255,255,.5);
+}
+p, ul li, ol li {
+    font-weight: 300;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.kilimanjaro_bottom_header_one {
+    background-color: #111;
+}
+.section_padding_50 {
+    padding: 50px 0;
+}
+.kilimanjaro_bottom_header_one p {
+    color: #fff;
+    margin: 0;
+}
+p, ul li, ol li {
+    font-weight: 300;
+}
+.kilimanjaro_bottom_header_one a {
+    color: inherit;
+    font-size: 14px;
+}
+a, h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+.m-top-15 {
+    margin-top: 15px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.kilimanjaro_widget > li {
+    display: inline-block;
+}
+p, ul li, ol li {
+    font-weight: 300;
+}
+ol li, ul li {
+    list-style: outside none none;
+}
+.kilimanjaro_widget a {
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #888;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 4px;
+    padding: 7px 12px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.kilimanjaro_links a {
+    border-bottom: 1px solid #333;
+    color: rgba(255,255,255,.5);
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+.kilimanjaro_links a {
+    color: rgba(255,255,255,.5);
+    font-size: 13px;
+}
+top-15 {
+    margin-top: 15px;
+}
+.foo_top_header_one .kilimanjaro_part > h5 {
+    color: #fff;
+}
+.kilimanjaro_part h4, .kilimanjaro_part h5 {
+    margin-bottom: 30px;
+}
+.kilimanjaro_social_links > li {
+    display: inline-block;
+}
+p, ul li, ol li {
+    font-weight: 300;
+}
+.kilimanjaro_social_links a {
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #888;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 3px;
+    padding: 7px 12px;
+}
+.kilimanjaro_blog_area .kilimanjaro_date {
+    color: #27ae60;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.kilimanjaro_blog_area > p {
+    color: rgba(255,255,255,.5);
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+.kilimanjaro_works > a {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 33.33333333%;
+    z-index: 1;
+}
+.kilimanjaro_thumb {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 75px;
+}
+.kilimanjaro_links a i {
+    padding-right: 10px;
+}
+  /* :: 18.0 Footer Area CSS */
+
+    .footer_area {
+        position: relative;
+        z-index: 1;
+    }
+ .footer_bottom p > i,
+    .footer_bottom p > a:hover {
+        color: #27ae60;
+    }	
+
+    .social_links_area {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 50px 0 30px 0;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+ .social_links_area > a:hover {
+        color: #27ae60;
+    }
+
+    .inline-style .social_links_area > a:hover {
+        background-color: transparent;
+        color: #27ae60;
+        border: 0px solid transparent;
+    }
+ .single_feature:hover .feature_text h4 {
+        color: #27ae60;
+    }
+.kilimanjaro_blog_area {
+    border-bottom: 1px solid #333;
+    margin-bottom: 15px;
+    padding: 0 0 15px 90px;
+    position: relative;
+    z-index: 1;
+}
+.kilimanjaro_links a {
+    border-bottom: 1px solid #333;
+    color: rgba(255,255,255,.5);
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+/* Credit to https://bootsnipp.com/snippets/X2XOv */
+
+
+
+
+
